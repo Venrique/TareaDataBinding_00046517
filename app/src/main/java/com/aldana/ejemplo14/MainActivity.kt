@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         scoreViewModel = ViewModelProviders.of(this).get(ScoreViewModel::class.java)
 
         DataBindingUtil.setContentView<ActivityMainBinding>(
